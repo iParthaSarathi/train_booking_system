@@ -315,8 +315,8 @@ $config['smtp_host']    = 'ssl://smtp.gmail.com';
 $config['smtp_port']    = '465';
 
 $config['smtp_timeout'] = '7';
-$config['smtp_user'] = 'ps747842@gmail.com';
-$config['smtp_pass'] = "@@@@@@747392@@@@@@6264";
+$config['smtp_user'] = 'your@gmail.com';
+$config['smtp_pass'] = "password";
 $config['charset']    = 'utf-8';
 
 $config['newline']    = "\r\n";
@@ -327,7 +327,7 @@ $config['validation'] = TRUE;
 	
 	  $this->load->library('email', $config); 
 
-        $this->email->from("ps597924@gmail.co","nome");
+        $this->email->from("yourmail@gmail.co","nome");
         $this->email->to($_SESSION['email']);
         $this->email->subject('OTP For Add Money To Wallet');
         $this->email->message('Hi'. $_SESSION['fname']." ".$_SESSION['lastname']."this is a ONE time OTP for Your transaction Your OTP is ".$substr);
